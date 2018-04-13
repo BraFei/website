@@ -1,0 +1,129 @@
+{% load staticfiles %}
+<html>
+	<head>
+    	<meta charset="UTF-8">
+    	<title>{% block title %}艺淼环保首页{% endblock %}</title>
+			<link rel="stylesheet" href="{% static 'product/css/reset.css' %}">
+			<link rel="stylesheet" href="{% static 'product/css/wufeng.css' %}">
+			<link rel="stylesheet" href="{% static 'product/css/css.css' %}">
+			<link rel="stylesheet" href="{% static 'product/css/style.css' %}">
+			<script src="{% static 'product/js/jquery.1.7.2.min.js' %}"></script>
+			<script src="{% static 'product/js/jquery.img_silder.js' %}"></script>
+			<script src="{% static 'product/js/index.js' %}"></script>
+			<script src="{% static 'product/js/index1.js' %}"></script>
+		{% block css %}{% endblock %}
+    </head>
+	<style>
+
+
+	</style>
+    <body>
+	<div class="box1">
+		<div class="header">
+			<div class="h_top">
+				<span>
+					<a href="#" title="新浪微博">新浪微博</a>
+					|
+					<a href="#" title="腾讯微博">腾讯微博</a>
+					|
+					<a href="#" title="收藏鑫水源环保">收藏鑫水源环保</a>
+					|
+					<a href="#" title="在线留言">在线留言</a>
+					|
+					<a href="#" title="网站地图">网站地图</a>
+				</span>
+				欢迎光临<i>鑫水源环保</i>网站
+			</div>
+			<div class="h_con">
+				<h1>
+					<a href="/" title="鑫水源环保"><img src="{% static 'product/image/logo.jpg' %}" alt="鑫水源环保"> </a>
+				</h1>
+				<p>
+					<i>污水治理工程首选</i>
+					专注有机污水治理
+					<!--<b>国家专利技术</b>-->
+				</p>
+				<q>
+					咨询热线
+					<span>
+						15397121116
+					</span>
+				</q>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="cur"><a href="/" title="网站首页">网站首页</a></li>
+					<li><a href="/aboutme" title="关于鑫水源">关于鑫水源</a></li>
+					<li><a href="/chenggonganli" title="成功案例">成功案例</a></li>
+					<!--<li><a href="n_san.html" title="羲皇公告">羲皇公告</a></li>-->
+					<!--<li><a href="n_si.html" title="荣誉资质">荣誉资质</a></li>-->
+					<li><a href="/product" title="产品中心">产品中心</a></li>
+					<li><a href="/new" title="新闻资讯">新闻资讯</a></li>
+					<!--<li><a href="n_qi.html" title="检测方案">检测方案</a></li>-->
+					<li><a href="/contact" title="联系我们">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="box3">
+		<div class="box3_q">
+			<p>
+				<b>热门关键词：</b>
+				<a href="#" title="中空纤维帘式膜">中空纤维帘式膜</a>
+				<a href="#" title="市政污水处理">市政污水处理</a>
+				<a href="#" title="有机废水治理">有机废水治理</a>
+				<a href="#" title="造纸废水处理">造纸废水处理</a>
+				<a href="#" title="橡胶厂污水处理">橡胶厂废水治理</a>
+			</p>
+			<div class="box3_w">
+				<input type="text" class="box3_e" value="请输入热门关键词..." style="color:rgb(102, 102, 102)">
+				<input type="image" src="{static '/product/image/s_s.jpg" onclick="xuanze();" alt="搜索">
+			</div>
+		</div>
+	</div>
+        {% block content %}
+		{% endblock %}
+
+
+
+		<div class="footer">
+		<div class="footer_q">
+			<div class="footer_top">
+				<a href="#" title="网站首页">网站首页</a>
+				<a href="#" title="关于鑫水源">关于鑫水源</a>
+				<a href="#" title="成功案例">成功案例</a>
+				<!--<a href="#" title="羲皇公告">羲皇公告</a>|-->
+				<!--<a href="#" title="荣誉资质">荣誉资质</a>|-->
+				<a href="#" title="产品中心">产品中心</a>
+				<a href="#" title="新闻资讯">新闻资讯</a>
+				<!--<a href="#" title="检测方案">检测方案</a>|-->
+				<a href="#" title="联系我们">联系我们</a>
+			</div>
+			<div class="footer_bottom">
+				<h3>
+					<a href="#">
+						<img src="{% static 'product/image/logo.jpg' %}" alt="logo" title="logo">
+					</a>
+				</h3>
+				<p>
+					<i>
+						济宁鑫水源环保工程有限公司
+                   	</i>
+                    <i>
+                    	咨询热线：0537-6286699
+                    	<span>
+                        	邮箱：15397121116.com
+                        </span>
+                    </i>
+                    <i>
+                    	办公地址：山东省济宁市唐马工业园区88号
+                    </i>
+
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+    </body>
+</html>
